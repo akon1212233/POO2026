@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary mb-5">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Funciones</span>
+        </div>
+    </nav>
+    <main class="d-flex flex-column gap-3 m-3">
+        <section class="d-flex flex-row gap-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Lista de Asistencia</h5>
+                    <div class="input-group mb-3 my-2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="lista(this)">Lista</button>
+                        <input type="text" class="form-control" placeholder=""
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                    <div id="pantalla" class="result alert alert-success mt-4 d-none">
+                        <p>Resultado: </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Fila de Urgencias Médicas</h5>
+                    <a href="#" class="btn btn-primary" onclick="urgencia(this)">Go somewhere</a>
+                    <div class="input-group mb-3 my-2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Input</button>
+                        <input type="text" class="form-control" placeholder=""
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                    <div id="pantalla" class="result alert alert-success mt-4 d-none">
+                        <p>Resultado: </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Sistema de Delivery</h5>
+                    <a href="#" class="btn btn-primary" onclick="delivery(this)">Go somewhere</a>
+                    <div class="input-group mb-3 my-2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Input</button>
+                        <input type="text" class="form-control" placeholder=""
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                    <div id="pantalla" class="result alert alert-success mt-4 d-none">
+                        <p>Resultado: </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Validador de Códigos de Descuento</h5>
+                    <a href="#" class="btn btn-primary" onclick="descuento(this)">Go somewhere</a>
+                    <div id="pantalla" class="result alert alert-success mt-4 d-none">
+                        <p>Resultado: </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="d-flex flex-row gap-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Simulador de Cuotas</h5>
+                    <a href="#" class="btn btn-primary" onclick="cuotas(this)">Go somewhere</a>
+                    <div id="pantalla" class="result alert alert-success mt-4 d-none">
+                        <p>Resultado: </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Filtro de Presupuesto</h5>
+                    <a href="#" class="btn btn-primary" onclick="presupuesto(this)">Go somewhere</a>
+                    <div id="pantalla" class="result alert alert-success mt-4 d-none">
+                        <p>Resultado: </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Cálculo de Sueldo Líquido</h5>
+                    <a href="#" class="btn btn-primary" onclick="sueldo(this)">Go somewhere</a>
+                    <div id="pantalla" class="result alert alert-success mt-4 d-none">
+                        <p>Resultado: </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">El Carrito de Compras</h5>
+                    <a href="#" class="btn btn-primary" onclick="compras(this)">Go somewhere</a>
+                    <div id="pantalla" class="result alert alert-success mt-4 d-none asd">
+                        <p>Resultado: </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="static/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
