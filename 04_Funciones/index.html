@@ -21,7 +21,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Lista de Asistencia</h5>
                     <div class="input-group mb-3 my-2">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon1" onclick="lista(this)">Lista</button>
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                            onclick="registrarAlumno(this)">Subir</button>
                         <input type="text" class="form-control" placeholder=""
                             aria-label="Example text with button addon" aria-describedby="button-addon1">
                     </div>
@@ -32,10 +33,10 @@
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Fila de Urgencias Médicas</h5>
-                    <a href="#" class="btn btn-primary" onclick="urgencia(this)">Go somewhere</a>
+                    <h5 class="card-title">Lista de Urgencia</h5>
                     <div class="input-group mb-3 my-2">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Input</button>
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                            onclick="ingresarUrgencia(this)">Subir</button>
                         <input type="text" class="form-control" placeholder=""
                             aria-label="Example text with button addon" aria-describedby="button-addon1">
                     </div>
@@ -46,10 +47,10 @@
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Sistema de Delivery</h5>
-                    <a href="#" class="btn btn-primary" onclick="delivery(this)">Go somewhere</a>
+                    <h5 class="card-title">Lista de Delivery</h5>
                     <div class="input-group mb-3 my-2">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Input</button>
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                            onclick="gestionarPedidos(this)">Subir</button>
                         <input type="text" class="form-control" placeholder=""
                             aria-label="Example text with button addon" aria-describedby="button-addon1">
                     </div>
@@ -60,19 +61,33 @@
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Validador de Códigos de Descuento</h5>
-                    <a href="#" class="btn btn-primary" onclick="descuento(this)">Go somewhere</a>
+                    <h5 class="card-title">Validador de Codigos</h5>
+                    <div class="input-group mb-3 my-2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                            onclick="verificarCodigo(this)">Subir</button>
+                        <input type="text" class="form-control" placeholder=""
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
                     <div id="pantalla" class="result alert alert-success mt-4 d-none">
                         <p>Resultado: </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="d-flex flex-row gap-3">
+        <section  class="d-flex flex-row gap-3">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Simulador de Cuotas</h5>
-                    <a href="#" class="btn btn-primary" onclick="cuotas(this)">Go somewhere</a>
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                        onclick="simularCuotas(this)">Subir producto</button>
+                    <div class="input-group mb-3 my-2">
+                        <input type="text" class="form-control" placeholder="Producto" id="Producto"
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                    <div class="input-group mb-3 my-2">
+                        <input type="text" class="form-control" placeholder="Cuota" id="Cuota"
+                            aria-label="Example text with button addon" aria-describedby="button-addon2">
+                    </div>
                     <div id="pantalla" class="result alert alert-success mt-4 d-none">
                         <p>Resultado: </p>
                     </div>
@@ -81,7 +96,12 @@
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Filtro de Presupuesto</h5>
-                    <a href="#" class="btn btn-primary" onclick="presupuesto(this)">Go somewhere</a>
+                    <div class="input-group mb-3 my-2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                            onclick="filtrarPrecios(this)">Subir</button>
+                        <input type="text" class="form-control" placeholder=""
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
                     <div id="pantalla" class="result alert alert-success mt-4 d-none">
                         <p>Resultado: </p>
                     </div>
@@ -90,7 +110,12 @@
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Cálculo de Sueldo Líquido</h5>
-                    <a href="#" class="btn btn-primary" onclick="sueldo(this)">Go somewhere</a>
+                    <div class="input-group mb-3 my-2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                            onclick="procesarSueldo(this)">Subir</button>
+                        <input type="text" class="form-control" placeholder=""
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
                     <div id="pantalla" class="result alert alert-success mt-4 d-none">
                         <p>Resultado: </p>
                     </div>
@@ -99,8 +124,13 @@
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">El Carrito de Compras</h5>
-                    <a href="#" class="btn btn-primary" onclick="compras(this)">Go somewhere</a>
-                    <div id="pantalla" class="result alert alert-success mt-4 d-none asd">
+                    <div class="input-group mb-3 my-2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                            onclick="agregarAlCarrito(this)">Subir</button>
+                        <input type="text" class="form-control" placeholder=""
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                    <div id="pantalla" class="result alert alert-success mt-4 d-none">
                         <p>Resultado: </p>
                     </div>
                 </div>
