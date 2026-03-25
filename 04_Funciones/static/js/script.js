@@ -96,7 +96,7 @@ function calcularDescuentos(bruto){
 function procesarSueldo(ubic) {
     let number = parseInt(inputCap(ubic))
     let sueldoLiquido = calcularDescuentos(number)
-    let result = `Tu sueldo a pagar es: $${sueldoLiquido}!`
+    let result = `Tu sueldo a pagar es: <strong>$${sueldoLiquido}!<strong>`
     showResult(ubic, result)
 }
 
